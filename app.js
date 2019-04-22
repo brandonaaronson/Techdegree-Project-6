@@ -18,7 +18,7 @@ let letterFound = null;
 
 // adds pointer cursor when hovering over start button 
 
-resetBtn.addEventListener('mouseover', (e) =>{
+resetBtn.addEventListener('mouseover', (e) => {
     resetBtn.style.cursor = 'pointer';
 });
 
@@ -142,7 +142,7 @@ const resetSpan = () => {
 // removes old phrase array from DOM, gets a new random phrase, adds phrase to display
 
 const resetPhrase = () =>{
-    let li = ul.querySelectorAll('li').forEach(li => li.remove());
+    ul.querySelectorAll('li').forEach(li => li.remove());
     phraseArray = getRandomPhraseAsArray(phrases);
     addPhraseToDisplay(phraseArray); 
 }
